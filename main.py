@@ -98,7 +98,7 @@ class App:
 
     def run(self):
         print("COIN GENERATOR ")
-        with open("K.json", "r") as emails:
+        with open("accounts.json", "r") as emails:
             emails = json.load(emails)
             print(f"{len(emails)} Accounts loaded")
             for account in emails:
