@@ -2,4 +2,3 @@ requests
 flask
 json_minify
 websocket
-base64
