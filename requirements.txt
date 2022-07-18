@@ -4,4 +4,4 @@ json_minify
 websocket
 ujson
 aminolib==0.0.4
-aminofix
+amino.fix
