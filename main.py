@@ -1,8 +1,11 @@
-import aminolib,ujson,time
+import aminolib,ujson,time,aminofix
 for a in ujson.load(open("accounts.json")):
 		e,p,d,SID=a["email"],a["password"],a["device"],a["SID"]
+		Ç=aminofix.Client(d)
+		Ç.login(e,p)
+		Z=Ç.sid
 		c = aminolib.Client(d)
-		c.login(e,p)
+		c.login_sid(Z)
 		print(f'Logged in {e}')
 		c.join_community("105025706")
 		for i in range(24):
