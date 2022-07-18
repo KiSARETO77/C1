@@ -2,3 +2,5 @@ requests
 flask
 json_minify
 websocket
+ujson
+aminolib==0.0.4
