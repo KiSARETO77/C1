@@ -11,6 +11,6 @@ for a in ujson.load(open("accounts.json")):
 				print(f"send time {i+1}")
 				time.sleep(12)
 			except Exception as e:
-				print(e)
 				time.sleep(20)
+				print(e)
 				pass
