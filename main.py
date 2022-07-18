@@ -1,9 +1,6 @@
-import aminolib,ujson,time,aminofix
+import aminolib,ujson,time
 for a in ujson.load(open("accounts.json")):
 		e,p,d,SID=a["email"],a["password"],a["device"],a["SID"]
-		Ç=aminofix.Client(d)
-		Ç.login(e,p)
-		Z=Ç.sid
 		c = aminolib.Client(d)
 		c.login_sid(Z)
 		print(f'Logged in {e}')
